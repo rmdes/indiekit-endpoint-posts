@@ -1,6 +1,0 @@
-{% set html %}{% for item in property -%}
-  <video src="{{ item.url | url(publication.me) }}" controls>
-{%- endfor %}{% endset -%}
-{{- prose({
-  html: html
-}) if property }}
