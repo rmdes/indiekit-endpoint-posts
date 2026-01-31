@@ -1,0 +1,127 @@
+{
+  "posts": {
+    "create": {
+      "action": "Nouvelle publication",
+      "title": "Créer une nouvelle publication %s"
+    },
+    "delete": {
+      "action": "Supprimer la publication",
+      "cancel": "Non – retourner à la publication",
+      "submit": "Je suis sûr – supprimer cette publication",
+      "title": "Êtes-vous sûr de vouloir supprimer cette publication ?"
+    },
+    "error": {
+      "content": {
+        "empty": "Saisir du contenu"
+      },
+      "featured-alt": {
+        "empty": "Entrez une description de cette image"
+      },
+      "geo": {
+        "invalid": "Saisir des coordonnées valides"
+      },
+      "media": {
+        "empty": "Entrez un chemin de fichier ou une adresse Web telle que %s"
+      },
+      "name": {
+        "empty": "Saisir un titre"
+      },
+      "type": {
+        "empty": "Sélectionnez un type de publication"
+      },
+      "url": {
+        "empty": "Saisir une adresse Web telle que %s"
+      }
+    },
+    "form": {
+      "advancedOptions": "Options avancées",
+      "back": "Modifier le type de publication",
+      "cancel": "Annuler",
+      "category": {
+        "hint": "Séparez chaque catégorie par une virgule",
+        "label": "Catégories",
+        "tag": "catégorie"
+      },
+      "content": {
+        "label": "Contenu"
+      },
+      "continue": "Continuer",
+      "featured": {
+        "alt": "Description accessible",
+        "label": "Image en vedette"
+      },
+      "geo": {
+        "hint": "Latitude et longitude, par exemple %s",
+        "label": "Coordonnées de localisation"
+      },
+      "location": {
+        "country-name": "Pays",
+        "label": "Localisation",
+        "locality": "Ville",
+        "name": "Lieu",
+        "postal-code": "Code postal",
+        "street-address": "Adresse"
+      },
+      "media": {
+        "label": "Chemin du fichier ou URL"
+      },
+      "mp-channel": {
+        "label": "Canal"
+      },
+      "mp-slug": {
+        "label": "Identifiant unique d’URL (slug)"
+      },
+      "mp-syndicate-to": {
+        "label": "Publier également sur"
+      },
+      "name": {
+        "label": "Titre"
+      },
+      "publish": "Publier la publication",
+      "publishDraft": "Enregistrer le brouillon",
+      "published": {
+        "label": "Date de publication",
+        "now": "Maintenant",
+        "scheduled": "Date et heure spécifiques"
+      },
+      "summary": {
+        "label": "Résumé"
+      },
+      "update": "Mettre à jour la publication",
+      "updateDraft": "Mettre à jour le brouillon",
+      "visibility": {
+        "label": "Visibilité"
+      }
+    },
+    "new": {
+      "title": "Quel type de publication souhaitez-vous créer ?"
+    },
+    "post": {
+      "properties": "Propriétés",
+      "syndicate": "Distribuer le post"
+    },
+    "posts": {
+      "none": "Aucune publication",
+      "title": "Articles publiés"
+    },
+    "status": {
+      "deleted": "Supprimé",
+      "draft": "Brouillon",
+      "private": "Privé",
+      "public": "Publique",
+      "published": "Publié",
+      "syndicated": "Distribué",
+      "unlisted": "Non listé"
+    },
+    "title": "Publications",
+    "undelete": {
+      "action": "Restaurer la publication",
+      "submit": "Je suis sûr – restaurer cette publication",
+      "title": "Êtes-vous sûr de vouloir restaurer cette publication ?"
+    },
+    "update": {
+      "action": "Modifier la publication",
+      "title": "Mettre à jour la publication de %s"
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "posts": {
+    "create": {
+      "action": "Nieuwe post",
+      "title": "Maak een nieuw %s post"
+    },
+    "delete": {
+      "action": "Post verwijderen",
+      "cancel": "Nee — ga terug naar de post",
+      "submit": "Ik weet het zeker — verwijder dit post",
+      "title": "Bent u zeker dat u dit post wilt verwijderen?"
+    },
+    "error": {
+      "content": {
+        "empty": "Voer wat inhoud in"
+      },
+      "featured-alt": {
+        "empty": "Voer een beschrijving van deze afbeelding in"
+      },
+      "geo": {
+        "invalid": "Voer geldige coördinaten in"
+      },
+      "media": {
+        "empty": "Voer een bestandspad of webadres in, zoals %s"
+      },
+      "name": {
+        "empty": "Geef een titel in"
+      },
+      "type": {
+        "empty": "Selecteer een berichttype"
+      },
+      "url": {
+        "empty": "Voer een webadres in zoals %s"
+      }
+    },
+    "form": {
+      "advancedOptions": "Geavanceerde opties",
+      "back": "Berichttype wijzigen",
+      "cancel": "Annuleren",
+      "category": {
+        "hint": "Scheid elke categorie van elkaar met een komma",
+        "label": "Categorieën",
+        "tag": "categorie"
+      },
+      "content": {
+        "label": "Inhoud"
+      },
+      "continue": "Doorgaan",
+      "featured": {
+        "alt": "Toegankelijke beschrijving",
+        "label": "Uitgelichte afbeelding"
+      },
+      "geo": {
+        "hint": "Lengte- en breedtegraad, bijvoorbeeld %s",
+        "label": "Locatiecoördinaten"
+      },
+      "location": {
+        "country-name": "Land",
+        "label": "Locatie",
+        "locality": "Stad",
+        "name": "Plaats",
+        "postal-code": "Postcode",
+        "street-address": "Adres"
+      },
+      "media": {
+        "label": "Bestandspad of URL"
+      },
+      "mp-channel": {
+        "label": "Kanaal"
+      },
+      "mp-slug": {
+        "label": "URL-slug"
+      },
+      "mp-syndicate-to": {
+        "label": "Syndicaat voor"
+      },
+      "name": {
+        "label": "Titel"
+      },
+      "publish": "Post publiceren",
+      "publishDraft": "Concept opslaan",
+      "published": {
+        "label": "Publicatie datum",
+        "now": "Nu",
+        "scheduled": "Specifieke datum en tijd"
+      },
+      "summary": {
+        "label": "Samenvatting"
+      },
+      "update": "Post bijwerken",
+      "updateDraft": "Concept bijwerken",
+      "visibility": {
+        "label": "Zichtbaarheid"
+      }
+    },
+    "new": {
+      "title": "Wat voor soort post wil je maken?"
+    },
+    "post": {
+      "properties": "Eigenschappen",
+      "syndicate": "Syndicaatspost"
+    },
+    "posts": {
+      "none": "Geen posten",
+      "title": "Gepubliceerde posten"
+    },
+    "status": {
+      "deleted": "Verwijderd",
+      "draft": "Concept",
+      "private": "Privaat",
+      "public": "Openbaar",
+      "published": "Gepubliceerd",
+      "syndicated": "Gesyndiceerd",
+      "unlisted": "Niet vermeld"
+    },
+    "title": "Posten",
+    "undelete": {
+      "action": "Post herstellen",
+      "submit": "Ik weet het zeker — herstel dit post",
+      "title": "Weet je zeker dat je dit post wilt herstellen?"
+    },
+    "update": {
+      "action": "Post bewerken",
+      "title": "Post %s bijwerken"
+    }
+  }
+}

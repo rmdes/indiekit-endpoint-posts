@@ -1,0 +1,114 @@
+{% extends "form.njk" %}
+
+{% block fieldset %}
+  {{ input({
+    name: "type",
+    type: "hidden",
+    value: type
+  }) | indent(2) }}
+
+  {{ input({
+    name: "postType",
+    type: "hidden",
+    value: postType
+  }) | indent(2) }}
+
+{% for name, field in fields %}
+  {% include "post-types/" + name + "-field.njk" ignore missing %}
+{% endfor %}
+
+  {{ checkboxes({
+    name: "mp-syndicate-to",
+    values: properties["mp-syndicate-to"],
+    fieldset: {
+      legend: __("posts.form.mp-syndicate-to.label")
+    },
+    items: syndicationTargetItems
+  }) | indent(2) }}
+
+  {% call details({
+    open: showAdvancedOptions,
+    summary: __("posts.form.advancedOptions")
+  }) %}
+    {{ radios({
+      fieldset: {
+        legend: __("posts.form.published.label")
+      },
+      name: "publication-date",
+      values: fieldData("publication-date").value,
+      items: [{
+        label: __("posts.form.published.now") if postStatus !== "published" else fieldData("published").value | date("PPPppp", { locale: opts.locale, timeZone: application.timeZone }),
+        value: "now",
+        checked: true
+      }, {
+        label: __("posts.form.published.scheduled"),
+        value: "scheduled",
+        conditional: input({
+          classes: "input--width-10",
+          name: "published",
+          type: "datetime-local",
+          label: __("posts.form.published.label")
+        })
+      }]
+    }) }}
+
+    {{ checkboxes({
+      name: "mp-channel",
+      values: properties["mp-channel"],
+      fieldset: {
+        legend: __("posts.form.mp-channel.label"),
+        optional: true
+      },
+      items: channelItems
+    }) | indent(2) if publication.channels }}
+
+    {{ radios({
+      inline: true,
+      name: "visibility",
+      values: properties.visibility,
+      fieldset: {
+        legend: __("posts.form.visibility.label"),
+        optional: true
+      },
+      items: [{
+        label: __("posts.status.public"),
+        value: "public"
+      }, {
+        label: __("posts.status.private"),
+        value: "private"
+      }, {
+        label: __("posts.status.unlisted"),
+        value: "unlisted"
+      }]
+    }) | indent(4) if fields.visibility }}
+
+    {{ input({
+      classes: "input--width-25",
+      name: "mp-slug",
+      value: fieldData("slug").value,
+      label: __("posts.form.mp-slug.label"),
+      optional: true
+    }) | indent(4) }}
+  {% endcall %}
+{% endblock %}
+
+{% block buttons %}
+  <div class="button-group">
+    {{ button({
+      name: "post-status",
+      value: "published",
+      text: __("posts.form.update") if postStatus === "published" else __("posts.form.publish")
+    }) | indent(4) if not draftMode }}
+
+    {{ button({
+      name: "post-status",
+      value: "draft",
+      classes: "button--secondary",
+      text: __("posts.form.updateDraft") if postStatus === "draft" else __("posts.form.publishDraft")
+    }) | indent(4) if postStatus !== "published" }}
+
+    {{ prose({
+      text: "[" + __("posts.form.cancel") + "](" + postsPath + ")"
+    }) | indent(4) }}
+  </div>
+{% endblock %}

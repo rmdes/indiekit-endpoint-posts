@@ -1,0 +1,127 @@
+{
+  "posts": {
+    "create": {
+      "action": "Novi post",
+      "title": "Kreiraj novi %s post"
+    },
+    "delete": {
+      "action": "Obriši post",
+      "cancel": "Ne - povratak na post",
+      "submit": "Siguran sam – izbrišite ovaj post",
+      "title": "Da li ste sigurni da želite da izbrišete ovu objavu?"
+    },
+    "error": {
+      "content": {
+        "empty": "Unesite neki sadržaj"
+      },
+      "featured-alt": {
+        "empty": "Unesite opis ove slike"
+      },
+      "geo": {
+        "invalid": "Unesite važeće koordinate"
+      },
+      "media": {
+        "empty": "Unesite putanju datoteke ili veb adresu kao što je %s"
+      },
+      "name": {
+        "empty": "Unesite naslov"
+      },
+      "type": {
+        "empty": "Izaberite vrstu posta"
+      },
+      "url": {
+        "empty": "Unesite veb adresu kao što je %s"
+      }
+    },
+    "form": {
+      "advancedOptions": "Napredne opcije",
+      "back": "Promenite tip posta",
+      "cancel": "Otkazati",
+      "category": {
+        "hint": "Odvojite svaku kategoriju zarezom",
+        "label": "Kategorije",
+        "tag": "kategorija"
+      },
+      "content": {
+        "label": "Sadržaj"
+      },
+      "continue": "Nastavi",
+      "featured": {
+        "alt": "Pristupačan opis",
+        "label": "Istaknuta slika"
+      },
+      "geo": {
+        "hint": "Geografska širina i dužina, na primer %s",
+        "label": "Koordinate lokacije"
+      },
+      "location": {
+        "country-name": "Zemlja",
+        "label": "Lokacija",
+        "locality": "Grad",
+        "name": "Mesto održavanja",
+        "postal-code": "Poštanski kod",
+        "street-address": "Ulica i broj"
+      },
+      "media": {
+        "label": "Putanja ili URL datoteke"
+      },
+      "mp-channel": {
+        "label": "Kanal"
+      },
+      "mp-slug": {
+        "label": "URL slag"
+      },
+      "mp-syndicate-to": {
+        "label": "Sindicate to"
+      },
+      "name": {
+        "label": "Naslov"
+      },
+      "publish": "Objavi post",
+      "publishDraft": "Sačuvaj nacrt",
+      "published": {
+        "label": "Datum objavljivanja",
+        "now": "Sada",
+        "scheduled": "Specifičan datum i vreme"
+      },
+      "summary": {
+        "label": "Sažetak"
+      },
+      "update": "Ažuriraj post",
+      "updateDraft": "Ažurirajte nacrt",
+      "visibility": {
+        "label": "Vidljivost"
+      }
+    },
+    "new": {
+      "title": "Koju vrstu posta želite da kreirate?"
+    },
+    "post": {
+      "properties": "Svojstva",
+      "syndicate": "Sindikat post"
+    },
+    "posts": {
+      "none": "Nema postova",
+      "title": "Objavljene postova"
+    },
+    "status": {
+      "deleted": "Izbrisano",
+      "draft": "Nacrt",
+      "private": "Privatni",
+      "public": "Javnosti",
+      "published": "Objavljeno",
+      "syndicated": "Sindicirano",
+      "unlisted": "Nije na listi"
+    },
+    "title": "Postova",
+    "undelete": {
+      "action": "Vrati nacrt",
+      "submit": "Siguran sam – vratite ovaj post",
+      "title": "Da li ste sigurni da želite da vratite ovaj post?"
+    },
+    "update": {
+      "action": "Uredi post",
+      "title": "Ažuriraj %s post"
+    }
+  }
+}

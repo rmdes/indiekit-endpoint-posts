@@ -1,0 +1,127 @@
+{
+  "posts": {
+    "create": {
+      "action": "新帖子",
+      "title": "创建新的 %s 帖子"
+    },
+    "delete": {
+      "action": "删除帖文",
+      "cancel": "否 — 返回帖子",
+      "submit": "我确定 — 删除这篇文章",
+      "title": "您确定要删除这个帖子吗？"
+    },
+    "error": {
+      "content": {
+        "empty": "输入一些内容"
+      },
+      "featured-alt": {
+        "empty": "输入此图片的描述"
+      },
+      "geo": {
+        "invalid": "输入有效坐标"
+      },
+      "media": {
+        "empty": "输入文件路径或网址，如 %s"
+      },
+      "name": {
+        "empty": "输入标题"
+      },
+      "type": {
+        "empty": "选择帖子类型"
+      },
+      "url": {
+        "empty": "输入像 %s 这样的网址"
+      }
+    },
+    "form": {
+      "advancedOptions": "高级选项",
+      "back": "更改帖子类型",
+      "cancel": "取消",
+      "category": {
+        "hint": "用逗号分隔每个类别",
+        "label": "类别",
+        "tag": "类别"
+      },
+      "content": {
+        "label": "内容"
+      },
+      "continue": "继续",
+      "featured": {
+        "alt": "无障碍描述",
+        "label": "特色图片"
+      },
+      "geo": {
+        "hint": "纬度和经度，例如 %s",
+        "label": "位置坐标"
+      },
+      "location": {
+        "country-name": "国家",
+        "label": "地点",
+        "locality": "城市",
+        "name": "举办地点",
+        "postal-code": "邮政编码",
+        "street-address": "街道地址"
+      },
+      "media": {
+        "label": "文件路径或 URL"
+      },
+      "mp-channel": {
+        "label": "频道"
+      },
+      "mp-slug": {
+        "label": "网址 slug"
+      },
+      "mp-syndicate-to": {
+        "label": "内容联合到"
+      },
+      "name": {
+        "label": "标题"
+      },
+      "publish": "发布帖子",
+      "publishDraft": "保存草稿",
+      "published": {
+        "label": "出版日期",
+        "now": "现在",
+        "scheduled": "具体日期和时间"
+      },
+      "summary": {
+        "label": "摘要"
+      },
+      "update": "更新帖子",
+      "updateDraft": "更新草稿",
+      "visibility": {
+        "label": "可见度"
+      }
+    },
+    "new": {
+      "title": "你想创建什么类型的帖子？"
+    },
+    "post": {
+      "properties": "属性",
+      "syndicate": "辛迪加帖子"
+    },
+    "posts": {
+      "none": "没有帖子",
+      "title": "已发布的帖子"
+    },
+    "status": {
+      "deleted": "已删除",
+      "draft": "草稿",
+      "private": "私密",
+      "public": "公开",
+      "published": "已发布",
+      "syndicated": "已内容联合",
+      "unlisted": "不公开列出"
+    },
+    "title": "帖子",
+    "undelete": {
+      "action": "恢复帖子",
+      "submit": "我确定 — 恢复这篇文章",
+      "title": "你确定要恢复这篇文章吗？"
+    },
+    "update": {
+      "action": "编辑帖子",
+      "title": "更新 %s 帖子"
+    }
+  }
+}

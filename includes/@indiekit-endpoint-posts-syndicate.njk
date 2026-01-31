@@ -1,0 +1,21 @@
+<form action="{{ application._syndicationEndpointPath }}" method="post">
+  {{ input({
+    name: "access_token",
+    type: "hidden",
+    value: token
+  }) | indent(2) }}
+
+  {{ input({
+    name: "syndication[redirect_uri]",
+    type: "hidden",
+    value: redirectUri
+  }) | indent(2) }}
+
+  {{ button({
+    classes: "button--secondary button--small",
+    name: "syndication[source_url]",
+    value: properties.url,
+    icon: "syndicate",
+    text: __("posts.post.syndicate")
+  }) | indent(2) }}
+</form>

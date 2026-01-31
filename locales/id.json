@@ -1,0 +1,127 @@
+{
+  "posts": {
+    "create": {
+      "action": "Postingan Baru",
+      "title": "Buat postingan %s baru"
+    },
+    "delete": {
+      "action": "Hapus postingan",
+      "cancel": "Tidak – kembali ke pos",
+      "submit": "Saya yakin – hapus posting ini",
+      "title": "Yakin ingin menghapus postingan ini?"
+    },
+    "error": {
+      "content": {
+        "empty": "Masukkan beberapa konten"
+      },
+      "featured-alt": {
+        "empty": "Masukkan deskripsi gambar ini"
+      },
+      "geo": {
+        "invalid": "Masukkan koordinat yang valid"
+      },
+      "media": {
+        "empty": "Masukkan jalur berkas atau alamat web seperti %s"
+      },
+      "name": {
+        "empty": "Masukkan judul"
+      },
+      "type": {
+        "empty": "Pilih Jenis Postingan"
+      },
+      "url": {
+        "empty": "Masukkan alamat web misalnya %s"
+      }
+    },
+    "form": {
+      "advancedOptions": "Opsi lanjutan",
+      "back": "Ubah jenis posting",
+      "cancel": "Batal",
+      "category": {
+        "hint": "Pisahkan setiap kategori dengan koma",
+        "label": "Kategori",
+        "tag": "kategori"
+      },
+      "content": {
+        "label": "Konten"
+      },
+      "continue": "Lanjutkan",
+      "featured": {
+        "alt": "Deskripsi yang dapat diakses",
+        "label": "Gambar unggulan"
+      },
+      "geo": {
+        "hint": "Lintang dan bujur, misalnya %s",
+        "label": "Koordinat lokasi"
+      },
+      "location": {
+        "country-name": "Negara",
+        "label": "Lokasi",
+        "locality": "Kota",
+        "name": "Tempat",
+        "postal-code": "Kode pos",
+        "street-address": "Alamat jalan"
+      },
+      "media": {
+        "label": "Jalur file atau URL"
+      },
+      "mp-channel": {
+        "label": "Saluran"
+      },
+      "mp-slug": {
+        "label": "URL siput"
+      },
+      "mp-syndicate-to": {
+        "label": "Sindikat ke"
+      },
+      "name": {
+        "label": "Judul"
+      },
+      "publish": "Publikasikan postingan",
+      "publishDraft": "Simpan draf",
+      "published": {
+        "label": "Tanggal penerbitan",
+        "now": "Sekarang",
+        "scheduled": "Tanggal dan waktu tertentu"
+      },
+      "summary": {
+        "label": "Ringkasan"
+      },
+      "update": "Perbarui pos",
+      "updateDraft": "Perbarui draf",
+      "visibility": {
+        "label": "Visibilitas"
+      }
+    },
+    "new": {
+      "title": "Jenis posting apa yang ingin Anda buat?"
+    },
+    "post": {
+      "properties": "Properti",
+      "syndicate": "Pos sindikat"
+    },
+    "posts": {
+      "none": "Tidak ada postingan",
+      "title": "Postingan yang diterbitkan"
+    },
+    "status": {
+      "deleted": "Dihapus",
+      "draft": "Draf",
+      "private": "Swasta",
+      "public": "Publik",
+      "published": "Diterbitkan",
+      "syndicated": "Bersindikasi",
+      "unlisted": "Tidak terdaftar"
+    },
+    "title": "Postingan",
+    "undelete": {
+      "action": "Pulihkan pos",
+      "submit": "Saya yakin – mengembalikan postingan ini",
+      "title": "Yakin ingin memulihkan postingan ini?"
+    },
+    "update": {
+      "action": "Sunting pos",
+      "title": "Perbarui %s pos"
+    }
+  }
+}

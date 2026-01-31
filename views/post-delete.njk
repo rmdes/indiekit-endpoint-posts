@@ -1,0 +1,17 @@
+{% extends "form.njk" %}
+
+{% block form %}
+  {{ heading({
+    text: title,
+    parent: parent
+  }) }}
+
+  {{ button({
+    classes: "button--warning" if action === "delete",
+    text: __("posts." + action + ".submit")
+  }) }}
+
+  {{ prose({
+    text: "[" + __("posts.delete.cancel") + "](" + postsPath + ")"
+  }) }}
+{% endblock %}

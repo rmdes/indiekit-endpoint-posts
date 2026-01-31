@@ -1,0 +1,14 @@
+{% if application.micropubEndpoint %}
+{% call widget({
+  title: __("posts.create.title", ""),
+  image: "/assets/" + plugin.id + "/icon.svg"
+}) %}
+  <div class="button-grid">{% for type, config in publication.postTypes | dictsort %}
+    {{ button({
+      classes: "button--secondary-on-offset button--inline",
+      href: application.postsEndpoint + "/create/?type=" + config.type,
+      text: (icon(config.type) or icon("note")) + config.name
+    }) }}
+  {% endfor %}</div>
+{% endcall %}
+{% endif %}

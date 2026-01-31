@@ -1,0 +1,17 @@
+{{ textarea({
+  name: "summary",
+  value: properties.summary,
+  label: __("posts.form.summary.label"),
+  optional: not field.required,
+  rows: 1,
+  field: {
+    attributes: {
+      editor: true,
+      "editor-endpoint": application.mediaEndpoint,
+      "editor-id": (properties.uid or ("new-" + postType)) + "-summary",
+      "editor-locale": application.locale,
+      "editor-status": "false",
+      "editor-toolbar": "false"
+    }
+  }
+}) }}

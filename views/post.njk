@@ -1,0 +1,39 @@
+{% extends "document.njk" %}
+
+{% block content %}
+  {{ badge({
+    color: statusTypes.deleted.color,
+    text: __(statusTypes.deleted.text)
+  }) if properties.deleted }}
+
+  {{ badge({
+    color: statusTypes[postStatus].color,
+    text: __(statusTypes[postStatus].text)
+  }) if postStatus }}
+
+  {{ badge({
+    color: statusTypes[properties.visibility].color,
+    icon: statusTypes[properties.visibility].icon,
+    text: __(statusTypes[properties.visibility].text)
+  }) if postStatus === "published" and statusTypes[properties.visibility] }}
+
+  {{ badge({
+    color: statusTypes.syndicated.color,
+    icon: statusTypes.syndicated.icon,
+    text: __(statusTypes.syndicated.text)
+  }) if postStatus === "published" and properties.syndication and statusTypes.syndicated }}
+
+{% if postStatus === "published" and properties["mp-syndicate-to"] %}
+  {% include "@indiekit-endpoint-posts-syndicate.njk" %}
+{% endif %}
+
+{% for name, property in properties %}
+  {% include "post-types/" + name + ".njk" ignore missing %}
+{% endfor %}
+
+  {% call details({
+    summary: __("posts.post.properties")
+  }) %}
+    {{ summary({ rows: summaryRows(properties) }) }}
+  {% endcall %}
+{% endblock %}

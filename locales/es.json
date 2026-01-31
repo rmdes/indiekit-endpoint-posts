@@ -1,0 +1,127 @@
+{
+  "posts": {
+    "create": {
+      "action": "Nueva publicación",
+      "title": "Crear una nueva publicación de %s"
+    },
+    "delete": {
+      "action": "Eliminar publicación",
+      "cancel": "No — volver a la publicación",
+      "submit": "Estoy seguro – borra esta publicación",
+      "title": "¿Seguro que quieres eliminar esta publicación?"
+    },
+    "error": {
+      "content": {
+        "empty": "Introducir algún contenido"
+      },
+      "featured-alt": {
+        "empty": "Introduzca una descripción de esta imagen"
+      },
+      "geo": {
+        "invalid": "Introduce coordenadas válidas"
+      },
+      "media": {
+        "empty": "Introduce una ruta de archivo o una dirección web como %s"
+      },
+      "name": {
+        "empty": "Pon un título"
+      },
+      "type": {
+        "empty": "Seleccionar tipo de publicación"
+      },
+      "url": {
+        "empty": "Introduce una dirección web como %s"
+      }
+    },
+    "form": {
+      "advancedOptions": "Opciones avanzadas",
+      "back": "Cambiar tipo de publicación",
+      "cancel": "Cancelar",
+      "category": {
+        "hint": "Separe cada categoría con una coma",
+        "label": "Categorías",
+        "tag": "categoría"
+      },
+      "content": {
+        "label": "Contenido"
+      },
+      "continue": "Continuar",
+      "featured": {
+        "alt": "Descripción accesible",
+        "label": "Imagen destacada"
+      },
+      "geo": {
+        "hint": "Latitud y longitud, por ejemplo %s",
+        "label": "Coordenadas de ubicación"
+      },
+      "location": {
+        "country-name": "País",
+        "label": "Ubicación",
+        "locality": "Ciudad o pueblo",
+        "name": "Campo",
+        "postal-code": "Código postal",
+        "street-address": "Dirección"
+      },
+      "media": {
+        "label": "Ruta o URL del archivo"
+      },
+      "mp-channel": {
+        "label": "Canal"
+      },
+      "mp-slug": {
+        "label": "URL slug"
+      },
+      "mp-syndicate-to": {
+        "label": "Sindicar a"
+      },
+      "name": {
+        "label": "Título"
+      },
+      "publish": "Publicar publicación",
+      "publishDraft": "Guardar borrador",
+      "published": {
+        "label": "Fecha de publicación",
+        "now": "Ahora",
+        "scheduled": "Fecha y hora específicas"
+      },
+      "summary": {
+        "label": "Resumen"
+      },
+      "update": "Actualizar publicación",
+      "updateDraft": "Actualizar borrador",
+      "visibility": {
+        "label": "Visibilidad"
+      }
+    },
+    "new": {
+      "title": "¿Qué tipo de publicación quieres crear?"
+    },
+    "post": {
+      "properties": "Propiedades",
+      "syndicate": "Sindicar"
+    },
+    "posts": {
+      "none": "No hay publicaciones",
+      "title": "Publicaciones publicadas"
+    },
+    "status": {
+      "deleted": "Eliminado",
+      "draft": "Borrador",
+      "private": "Privado",
+      "public": "Público",
+      "published": "Publicado",
+      "syndicated": "Sindicado",
+      "unlisted": "No enlistado"
+    },
+    "title": "Publicaciones",
+    "undelete": {
+      "action": "Restaurar publicación",
+      "submit": "Estoy seguro – restaura esta publicación",
+      "title": "¿Estás seguro de que quieres restaurar esta publicación?"
+    },
+    "update": {
+      "action": "Editar publicación",
+      "title": "Actualizar publicación de %s"
+    }
+  }
+}

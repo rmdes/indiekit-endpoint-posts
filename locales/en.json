@@ -1,0 +1,127 @@
+{
+  "posts": {
+    "error": {
+      "content": {
+        "empty": "Enter some content"
+      },
+      "featured-alt": {
+        "empty": "Enter a description of this image"
+      },
+      "geo": {
+        "invalid": "Enter valid coordinates"
+      },
+      "name": {
+        "empty": "Enter a title"
+      },
+      "type": {
+        "empty": "Select a post type"
+      },
+      "url": {
+        "empty": "Enter a web address like %s"
+      },
+      "media": {
+        "empty": "Enter a file path or web address like %s"
+      }
+    },
+    "status": {
+      "deleted": "Deleted",
+      "draft": "Draft",
+      "private": "Private",
+      "public": "Public",
+      "published": "Published",
+      "syndicated": "Syndicated",
+      "unlisted": "Unlisted"
+    },
+    "new": {
+      "title": "What type of post do you want to create?"
+    },
+    "create": {
+      "action": "New post",
+      "title": "Create a new %s post"
+    },
+    "update": {
+      "action": "Edit post",
+      "title": "Update %s post"
+    },
+    "delete": {
+      "action": "Delete post",
+      "title": "Are you sure you want to delete this post?",
+      "submit": "I’m sure – delete this post",
+      "cancel": "No – return to post"
+    },
+    "undelete": {
+      "action": "Restore post",
+      "title": "Are you sure you want to restore this post?",
+      "submit": "I’m sure – restore this post"
+    },
+    "form": {
+      "advancedOptions": "Advanced options",
+      "back": "Change post type",
+      "continue": "Continue",
+      "publish": "Publish post",
+      "update": "Update post",
+      "publishDraft": "Save draft",
+      "updateDraft": "Update draft",
+      "cancel": "Cancel",
+      "category": {
+        "hint": "Separate each category with a comma",
+        "label": "Categories",
+        "tag": "category"
+      },
+      "content": {
+        "label": "Content"
+      },
+      "featured": {
+        "label": "Featured image",
+        "alt": "Accessible description"
+      },
+      "geo": {
+        "label": "Location coordinates",
+        "hint": "Latitude and longitude, for example %s"
+      },
+      "location": {
+        "label": "Location",
+        "name": "Venue",
+        "street-address": "Street address",
+        "locality": "City or town",
+        "country-name": "Country",
+        "postal-code": "Postal code"
+      },
+      "name": {
+        "label": "Title"
+      },
+      "media": {
+        "label": "File path or URL"
+      },
+      "mp-channel": {
+        "label": "Channel"
+      },
+      "mp-slug": {
+        "label": "URL slug"
+      },
+      "mp-syndicate-to": {
+        "label": "Syndicate to"
+      },
+      "published": {
+        "label": "Publication date",
+        "now": "Now",
+        "scheduled": "Specific date and time"
+      },
+      "summary": {
+        "label": "Summary"
+      },
+      "visibility": {
+        "label": "Visibility"
+      }
+    },
+    "post": {
+      "properties": "Properties",
+      "syndicate": "Syndicate post"
+    },
+    "posts": {
+      "title": "Published posts",
+      "none": "No posts"
+    },
+    "title": "Posts"
+  }
+}
