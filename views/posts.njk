@@ -1,6 +1,119 @@
 {% extends "document.njk" %}
 
 {% block content %}
+  <style>
+    .posts-filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-xs, 0.5rem);
+      align-items: center;
+      margin-block-end: var(--space-s, 0.75rem);
+    }
+    .posts-filter-label {
+      font: var(--font-body, 0.875rem/1.5 sans-serif);
+      color: var(--color-on-offset, #666);
+    }
+    .posts-filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+    }
+    .posts-filter-pills a {
+      text-decoration: none;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-size: 0.875rem;
+      color: var(--color-on-offset, #666);
+      background: var(--color-offset, #f0f0f0);
+    }
+    .posts-filter-pills a.active {
+      background: var(--color-primary, #0066cc);
+      color: var(--color-on-primary, #fff);
+    }
+    .posts-filter-pills .count {
+      font-size: 0.75rem;
+      opacity: 0.7;
+    }
+    .posts-search {
+      display: flex;
+      gap: var(--space-xs, 0.5rem);
+      align-items: center;
+    }
+    .posts-search input[type="search"] {
+      padding: 0.25rem 0.5rem;
+      border: 1px solid var(--color-border, #ccc);
+      border-radius: var(--border-radius-small, 0.25rem);
+      font: inherit;
+    }
+    .posts-meta {
+      font-size: 0.875rem;
+      color: var(--color-on-offset, #666);
+      margin-block-end: var(--space-s, 0.75rem);
+    }
+  </style>
+
+  <div class="posts-filters">
+    {# Row 1: Post type pills #}
+    <div class="posts-filter-row">
+      <span class="posts-filter-label">{{ __("posts.filter.type") }}:</span>
+      <div class="posts-filter-pills">
+        <a href="?status={{ filters.status }}{% if filters.search %}&search={{ filters.search }}{% endif %}&sort={{ filters.sort }}"
+           class="{% if filters.postType == 'all' %}active{% endif %}">
+          {{ __("posts.filter.all") }}
+        </a>
+        {% for pt in postTypes %}
+          {% if pt.count > 0 %}
+          <a href="?type={{ pt.id }}&status={{ filters.status }}{% if filters.search %}&search={{ filters.search }}{% endif %}&sort={{ filters.sort }}"
+             class="{% if filters.postType == pt.id %}active{% endif %}">
+            {{ pt.name }} <span class="count">({{ pt.count }})</span>
+          </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    {# Row 2: Status pills #}
+    <div class="posts-filter-row">
+      <span class="posts-filter-label">{{ __("posts.filter.status") }}:</span>
+      <div class="posts-filter-pills">
+        {% for s in ["published", "draft", "deleted", "all"] %}
+          <a href="?{% if filters.postType != 'all' %}type={{ filters.postType }}&{% endif %}status={{ s }}{% if filters.search %}&search={{ filters.search }}{% endif %}&sort={{ filters.sort }}"
+             class="{% if filters.status == s %}active{% endif %}">
+            {{ __("posts.filter.status_" + s) }}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    {# Row 3: Search + Sort #}
+    <div class="posts-filter-row" style="justify-content: space-between;">
+      <form class="posts-search" method="get" action="">
+        {% if filters.postType != "all" %}<input type="hidden" name="type" value="{{ filters.postType }}">{% endif %}
+        {% if filters.status != "published" %}<input type="hidden" name="status" value="{{ filters.status }}">{% endif %}
+        <input type="hidden" name="sort" value="{{ filters.sort }}">
+        <input type="search" name="search" value="{{ filters.search }}" placeholder="{{ __('posts.filter.searchPlaceholder') }}">
+        <button type="submit" class="button button--small">{{ __("posts.filter.searchButton") }}</button>
+        {% if filters.search %}
+          <a href="?{% if filters.postType != 'all' %}type={{ filters.postType }}&{% endif %}status={{ filters.status }}&sort={{ filters.sort }}">{{ __("posts.filter.clear") }}</a>
+        {% endif %}
+      </form>
+      <div class="posts-filter-pills">
+        <a href="?{% if filters.postType != 'all' %}type={{ filters.postType }}&{% endif %}status={{ filters.status }}{% if filters.search %}&search={{ filters.search }}{% endif %}&sort=newest"
+           class="{% if filters.sort == 'newest' %}active{% endif %}">{{ __("posts.filter.newest") }}</a>
+        <a href="?{% if filters.postType != 'all' %}type={{ filters.postType }}&{% endif %}status={{ filters.status }}{% if filters.search %}&search={{ filters.search }}{% endif %}&sort=oldest"
+           class="{% if filters.sort == 'oldest' %}active{% endif %}">{{ __("posts.filter.oldest") }}</a>
+      </div>
+    </div>
+  </div>
+
+  {# Results meta #}
+  {% if total %}
+  <div class="posts-meta">
+    <span>{{ total }} {{ __("posts.filter.results") }}{% if filters.search %} for "{{ filters.search }}"{% endif %}</span>
+  </div>
+  {% endif %}
+
+  {# Post grid #}
   {%- if posts.length > 0 %}
   {{ cardGrid({
     cardSize: "16rem",

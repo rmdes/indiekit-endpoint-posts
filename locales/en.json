@@ -119,8 +119,23 @@
       "syndicate": "Syndicate post"
     },
     "posts": {
-      "title": "Published posts",
+      "title": "Posts",
       "none": "No posts"
+    },
+    "filter": {
+      "type": "Type",
+      "status": "Status",
+      "all": "All",
+      "status_published": "Published",
+      "status_draft": "Drafts",
+      "status_deleted": "Deleted",
+      "status_all": "All",
+      "searchPlaceholder": "Search posts\u2026",
+      "searchButton": "Search",
+      "clear": "Clear",
+      "newest": "Newest",
+      "oldest": "Oldest",
+      "results": "posts"
     },
     "title": "Posts"
   }
