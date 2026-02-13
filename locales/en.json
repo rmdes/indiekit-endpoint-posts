@@ -52,7 +52,15 @@
     "undelete": {
       "action": "Restore post",
       "title": "Are you sure you want to restore this post?",
-      "submit": "I’m sure – restore this post"
+      "submit": "I'm sure – restore this post"
+    },
+    "purge": {
+      "action": "Permanently delete",
+      "title": "Permanently delete this post?",
+      "warning": "This will remove the post from the database. This action cannot be undone.",
+      "submit": "I'm sure – permanently delete",
+      "cancel": "No – return to posts",
+      "success": "Post permanently deleted"
     },
     "form": {
       "advancedOptions": "Advanced options",

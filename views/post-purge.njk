@@ -1,0 +1,21 @@
+{% extends "form.njk" %}
+
+{% block form %}
+  {{ heading({
+    text: title,
+    parent: parent
+  }) }}
+
+  {{ prose({
+    text: __("posts.purge.warning")
+  }) }}
+
+  {{ button({
+    classes: "button--warning",
+    text: __("posts.purge.submit")
+  }) }}
+
+  {{ prose({
+    text: "[" + __("posts.purge.cancel") + "](" + postsPath + ")"
+  }) }}
+{% endblock %}

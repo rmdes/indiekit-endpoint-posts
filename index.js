@@ -5,6 +5,7 @@ import { ISO_6709_RE, isRequired } from "@indiekit/util";
 import express from "express";
 
 import { deleteController } from "./lib/controllers/delete.js";
+import { purgeController } from "./lib/controllers/purge.js";
 import { formController } from "./lib/controllers/form.js";
 import { newController } from "./lib/controllers/new.js";
 import { postController } from "./lib/controllers/post.js";
@@ -57,6 +58,9 @@ export default class PostsEndpoint {
 
     router.get(["/:uid/delete", "/:uid/undelete"], deleteController.get);
     router.post(["/:uid/delete", "/:uid/undelete"], deleteController.post);
+
+    router.get("/:uid/purge", purgeController.get);
+    router.post("/:uid/purge", purgeController.post);
 
     return router;
   }
