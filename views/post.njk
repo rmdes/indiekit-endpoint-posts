@@ -23,7 +23,7 @@
     text: __(statusTypes.syndicated.text)
   }) if postStatus === "published" and properties.syndication and statusTypes.syndicated }}
 
-{% if postStatus === "published" and properties["mp-syndicate-to"] %}
+{% if postStatus === "published" and (properties["mp-syndicate-to"] or properties.syndication) %}
   {% include "@indiekit-endpoint-posts-syndicate.njk" %}
 {% endif %}
 
