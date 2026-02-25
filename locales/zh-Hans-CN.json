@@ -65,8 +65,8 @@
       "media": {
         "label": "文件路径或 URL"
       },
-      "mp-channel": {
-        "label": "频道"
+      "layout": {
+        "label": "Layout"
       },
       "mp-slug": {
         "label": "网址 slug"

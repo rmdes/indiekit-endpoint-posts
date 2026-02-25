@@ -65,8 +65,8 @@
       "media": {
         "label": "Filsökväg eller URL"
       },
-      "mp-channel": {
-        "label": "Kanal"
+      "layout": {
+        "label": "Layout"
       },
       "mp-slug": {
         "label": "URL-slug"

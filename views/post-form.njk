@@ -52,16 +52,6 @@
       }]
     }) }}
 
-    {{ checkboxes({
-      name: "mp-channel",
-      values: properties["mp-channel"],
-      fieldset: {
-        legend: __("posts.form.mp-channel.label"),
-        optional: true
-      },
-      items: channelItems
-    }) | indent(2) if publication.channels }}
-
     {{ radios({
       inline: true,
       name: "visibility",
@@ -89,6 +79,23 @@
       label: __("posts.form.mp-slug.label"),
       optional: true
     }) | indent(4) }}
+
+    {% if layoutItems and layoutItems.length %}
+    {% set layoutSelectItems = [] %}
+    {% for item in layoutItems %}
+      {% set _ = layoutSelectItems.push({
+        text: item.text,
+        value: item.value,
+        selected: item.value === properties.layout
+      }) %}
+    {% endfor %}
+    {{ select({
+      name: "layout",
+      label: __("posts.form.layout.label"),
+      optional: true,
+      items: layoutSelectItems
+    }) | indent(4) }}
+    {% endif %}
   {% endcall %}
 {% endblock %}
 

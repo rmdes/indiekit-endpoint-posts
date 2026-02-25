@@ -65,8 +65,8 @@
       "media": {
         "label": "Percorso del file o URL"
       },
-      "mp-channel": {
-        "label": "Canale"
+      "layout": {
+        "label": "Layout"
       },
       "mp-slug": {
         "label": "Slug dell'URL"
