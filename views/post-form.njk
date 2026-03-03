@@ -96,6 +96,48 @@
       items: layoutSelectItems
     }) | indent(4) }}
     {% endif %}
+
+    {{ select({
+      name: "ai-text-level",
+      label: __("posts.form.ai-text-level.label"),
+      optional: true,
+      items: [
+        { text: "", value: "" },
+        { text: __("posts.form.ai-text-level.0"), value: "0", selected: properties["ai-text-level"] === "0" },
+        { text: __("posts.form.ai-text-level.1"), value: "1", selected: properties["ai-text-level"] === "1" },
+        { text: __("posts.form.ai-text-level.2"), value: "2", selected: properties["ai-text-level"] === "2" },
+        { text: __("posts.form.ai-text-level.3"), value: "3", selected: properties["ai-text-level"] === "3" }
+      ]
+    }) | indent(4) }}
+
+    {{ select({
+      name: "ai-code-level",
+      label: __("posts.form.ai-code-level.label"),
+      optional: true,
+      items: [
+        { text: "", value: "" },
+        { text: __("posts.form.ai-code-level.0"), value: "0", selected: properties["ai-code-level"] === "0" },
+        { text: __("posts.form.ai-code-level.1"), value: "1", selected: properties["ai-code-level"] === "1" },
+        { text: __("posts.form.ai-code-level.2"), value: "2", selected: properties["ai-code-level"] === "2" }
+      ]
+    }) | indent(4) }}
+
+    {{ input({
+      classes: "input--width-25",
+      name: "ai-tools",
+      value: properties["ai-tools"],
+      label: __("posts.form.ai-tools.label"),
+      hint: __("posts.form.ai-tools.placeholder"),
+      optional: true
+    }) | indent(4) }}
+
+    {{ input({
+      classes: "input--width-25",
+      name: "ai-description",
+      value: properties["ai-description"],
+      label: __("posts.form.ai-description.label"),
+      optional: true
+    }) | indent(4) }}
   {% endcall %}
 {% endblock %}
 

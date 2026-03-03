@@ -120,6 +120,26 @@
       },
       "visibility": {
         "label": "Visibility"
+      },
+      "ai-text-level": {
+        "label": "AI text level",
+        "0": "0 — None",
+        "1": "1 — Editorial assistance",
+        "2": "2 — Co-drafting",
+        "3": "3 — AI-generated (human reviewed)"
+      },
+      "ai-code-level": {
+        "label": "AI code level",
+        "0": "0 — Human-written",
+        "1": "1 — AI-assisted",
+        "2": "2 — Primarily AI-generated"
+      },
+      "ai-tools": {
+        "label": "AI tools",
+        "placeholder": "e.g. Claude, ChatGPT, Copilot"
+      },
+      "ai-description": {
+        "label": "AI usage note"
       }
     },
     "post": {
