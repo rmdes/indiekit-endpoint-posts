@@ -102,8 +102,7 @@
       label: __("posts.form.ai-text-level.label"),
       optional: true,
       items: [
-        { text: "", value: "" },
-        { text: __("posts.form.ai-text-level.0"), value: "0", selected: properties["ai-text-level"] === "0" },
+        { text: __("posts.form.ai-text-level.0"), value: "0", selected: properties["ai-text-level"] === "0" or not properties["ai-text-level"] },
         { text: __("posts.form.ai-text-level.1"), value: "1", selected: properties["ai-text-level"] === "1" },
         { text: __("posts.form.ai-text-level.2"), value: "2", selected: properties["ai-text-level"] === "2" },
         { text: __("posts.form.ai-text-level.3"), value: "3", selected: properties["ai-text-level"] === "3" }
