@@ -121,6 +121,11 @@
       "visibility": {
         "label": "Visibility"
       },
+      "pinned": {
+        "label": "Featured post",
+        "no": "No",
+        "yes": "Yes — pin to Featured section"
+      },
       "ai-text-level": {
         "label": "AI text level",
         "0": "0 — None",

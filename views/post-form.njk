@@ -98,6 +98,16 @@
     {% endif %}
 
     {{ select({
+      name: "pinned",
+      label: __("posts.form.pinned.label"),
+      optional: true,
+      items: [
+        { text: __("posts.form.pinned.no"), value: "", selected: not properties.pinned },
+        { text: __("posts.form.pinned.yes"), value: "true", selected: properties.pinned === "true" or properties.pinned === true }
+      ]
+    }) | indent(4) }}
+
+    {{ select({
       name: "ai-text-level",
       label: __("posts.form.ai-text-level.label"),
       optional: true,
