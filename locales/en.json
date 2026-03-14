@@ -121,6 +121,10 @@
       "visibility": {
         "label": "Visibility"
       },
+      "sensitive": {
+        "label": "Content warning",
+        "hint": "Mark this post as sensitive and add an optional warning text"
+      },
       "pinned": {
         "label": "Featured post",
         "no": "No",

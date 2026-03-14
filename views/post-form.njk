@@ -72,6 +72,24 @@
       }]
     }) | indent(4) if fields.visibility }}
 
+    {{ checkboxes({
+      name: "sensitive",
+      values: properties.sensitive,
+      fieldset: {
+        legend: __("posts.form.sensitive.label")
+      },
+      items: [{
+        label: __("posts.form.sensitive.hint"),
+        value: "true",
+        conditional: input({
+          name: "summary",
+          value: properties.summary,
+          label: __("posts.form.summary.label"),
+          optional: true
+        })
+      }]
+    }) | indent(4) }}
+
     {{ input({
       classes: "input--width-25",
       name: "mp-slug",
