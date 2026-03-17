@@ -62,6 +62,15 @@
       "cancel": "No – return to posts",
       "success": "Post permanently deleted"
     },
+    "purgeAll": {
+      "action": "Purge all deleted",
+      "title": "Permanently delete all deleted posts?",
+      "warning": "This will permanently remove **%s deleted post(s)** from the database. This action cannot be undone.",
+      "submit": "I'm sure - permanently delete all",
+      "cancel": "No - return to posts",
+      "success": "Permanently deleted %s post(s)",
+      "none": "No deleted posts to purge"
+    },
     "form": {
       "advancedOptions": "Advanced options",
       "back": "Change post type",

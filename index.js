@@ -6,6 +6,7 @@ import express from "express";
 
 import { deleteController } from "./lib/controllers/delete.js";
 import { editController } from "./lib/controllers/edit.js";
+import { purgeAllController } from "./lib/controllers/purge-all.js";
 import { purgeController } from "./lib/controllers/purge.js";
 import { formController } from "./lib/controllers/form.js";
 import { newController } from "./lib/controllers/new.js";
@@ -46,6 +47,9 @@ export default class PostsEndpoint {
     router.get("/", postsController);
 
     router.get("/edit", editController.get);
+
+    router.get("/purge-deleted", purgeAllController.get);
+    router.post("/purge-deleted", purgeAllController.post);
 
     router.get("/new", newController.get);
     router.post("/new", validate.new, newController.post);

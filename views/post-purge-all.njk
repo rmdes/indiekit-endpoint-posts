@@ -1,0 +1,20 @@
+{% extends "form.njk" %}
+
+{% block form %}
+  {{ heading({
+    text: title
+  }) }}
+
+  {{ prose({
+    text: __("posts.purgeAll.warning", deletedCount)
+  }) }}
+
+  {{ button({
+    classes: "button--warning",
+    text: __("posts.purgeAll.submit")
+  }) }}
+
+  {{ prose({
+    text: "[" + __("posts.purgeAll.cancel") + "](" + postsPath + ")"
+  }) }}
+{% endblock %}
