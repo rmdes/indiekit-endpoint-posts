@@ -91,6 +91,35 @@
       "updateDraft": "Zaktualizuj wersję roboczą",
       "visibility": {
         "label": "Widoczność"
+      },
+      "ai-code-level": {
+        "0": "0 — Napisany przez człowieka",
+        "1": "1 — Wspomagany przez AI",
+        "2": "2 — Głównie wygenerowany przez AI",
+        "label": "Poziom kodu AI"
+      },
+      "ai-description": {
+        "label": "Notatka o użyciu AI"
+      },
+      "ai-text-level": {
+        "0": "0 — Brak",
+        "1": "1 — Pomoc redakcyjna",
+        "2": "2 — Współtworzenie",
+        "3": "3 — Wygenerowany przez AI (zweryfikowany przez człowieka)",
+        "label": "Poziom tekstu AI"
+      },
+      "ai-tools": {
+        "label": "Narzędzia AI",
+        "placeholder": "np. Claude, ChatGPT, Copilot"
+      },
+      "pinned": {
+        "label": "Wyróżniony wpis",
+        "no": "Nie",
+        "yes": "Tak — przypnij w sekcji Wyróżnione"
+      },
+      "sensitive": {
+        "hint": "Oznacz ten wpis jako wrażliwy i dodaj opcjonalny tekst ostrzeżenia",
+        "label": "Ostrzeżenie o treści"
       }
     },
     "new": {
@@ -122,6 +151,38 @@
     "update": {
       "action": "Edytuj post",
       "title": "Zaktualizuj %s posta"
+    },
+    "filter": {
+      "type": "Typ",
+      "status": "Status",
+      "all": "Wszystkie",
+      "status_published": "Opublikowane",
+      "status_draft": "Szkice",
+      "status_deleted": "Usunięte",
+      "status_all": "Wszystkie",
+      "searchPlaceholder": "Szukaj wpisów…",
+      "searchButton": "Szukaj",
+      "clear": "Wyczyść",
+      "newest": "Najnowsze",
+      "oldest": "Najstarsze",
+      "results": "wpisy"
+    },
+    "purge": {
+      "action": "Usuń trwale",
+      "cancel": "Nie – wróć do wpisów",
+      "submit": "Jestem pewien – usuń trwale",
+      "success": "Wpis trwale usunięty",
+      "title": "Trwale usunąć ten wpis?",
+      "warning": "To usunie wpis z bazy danych. Tej czynności nie można cofnąć."
+    },
+    "purgeAll": {
+      "action": "Wyczyść wszystkie usunięte",
+      "cancel": "Nie - wróć do wpisów",
+      "none": "Brak usuniętych wpisów do wyczyszczenia",
+      "submit": "Jestem pewien - trwale usuń wszystkie",
+      "success": "Trwale usunięto %s wpisów",
+      "title": "Trwale usunąć wszystkie usunięte wpisy?",
+      "warning": "To trwale usunie **%s usuniętych wpisów** z bazy danych. Tej czynności nie można cofnąć."
     }
   }
 }

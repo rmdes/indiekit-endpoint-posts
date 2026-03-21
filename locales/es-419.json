@@ -91,6 +91,35 @@
       "updateDraft": "Actualizar borrador",
       "visibility": {
         "label": "Visibilidad"
+      },
+      "ai-code-level": {
+        "0": "0 — Escrito por humanos",
+        "1": "1 — Asistido por IA",
+        "2": "2 — Generado principalmente por IA",
+        "label": "Nivel de código IA"
+      },
+      "ai-description": {
+        "label": "Nota de uso de IA"
+      },
+      "ai-text-level": {
+        "0": "0 — Ninguno",
+        "1": "1 — Asistencia editorial",
+        "2": "2 — Co-redacción",
+        "3": "3 — Generado por IA (revisado por humano)",
+        "label": "Nivel de texto IA"
+      },
+      "ai-tools": {
+        "label": "Herramientas de IA",
+        "placeholder": "p. ej. Claude, ChatGPT, Copilot"
+      },
+      "pinned": {
+        "label": "Publicación destacada",
+        "no": "No",
+        "yes": "Sí — fijar en la sección Destacados"
+      },
+      "sensitive": {
+        "hint": "Marcar esta publicación como sensible y agregar un texto de advertencia opcional",
+        "label": "Advertencia de contenido"
       }
     },
     "new": {
@@ -122,6 +151,38 @@
     "update": {
       "action": "Editar publicación",
       "title": "Actualizar publicación %s"
+    },
+    "filter": {
+      "type": "Tipo",
+      "status": "Estado",
+      "all": "Todos",
+      "status_published": "Publicados",
+      "status_draft": "Borradores",
+      "status_deleted": "Eliminados",
+      "status_all": "Todos",
+      "searchPlaceholder": "Buscar publicaciones…",
+      "searchButton": "Buscar",
+      "clear": "Limpiar",
+      "newest": "Más reciente",
+      "oldest": "Más antiguo",
+      "results": "publicaciones"
+    },
+    "purge": {
+      "action": "Eliminar permanentemente",
+      "cancel": "No – volver a publicaciones",
+      "submit": "Estoy seguro – eliminar permanentemente",
+      "success": "Publicación eliminada permanentemente",
+      "title": "¿Eliminar permanentemente esta publicación?",
+      "warning": "Esto eliminará la publicación de la base de datos. Esta acción no se puede deshacer."
+    },
+    "purgeAll": {
+      "action": "Purgar todas las eliminadas",
+      "cancel": "No - volver a publicaciones",
+      "none": "No hay publicaciones eliminadas para purgar",
+      "submit": "Estoy seguro - eliminar todas permanentemente",
+      "success": "%s publicación(es) eliminada(s) permanentemente",
+      "title": "¿Eliminar permanentemente todas las publicaciones eliminadas?",
+      "warning": "Esto eliminará permanentemente **%s publicación(es) eliminada(s)** de la base de datos. Esta acción no se puede deshacer."
     }
   }
 }

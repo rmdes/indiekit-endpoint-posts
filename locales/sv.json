@@ -91,6 +91,35 @@
       "updateDraft": "Uppdatera utkast",
       "visibility": {
         "label": "Synlighet"
+      },
+      "ai-code-level": {
+        "0": "0 — Skrivet av människa",
+        "1": "1 — AI-assisterat",
+        "2": "2 — Huvudsakligen AI-genererat",
+        "label": "AI-kodnivå"
+      },
+      "ai-description": {
+        "label": "AI-användningsnotering"
+      },
+      "ai-text-level": {
+        "0": "0 — Ingen",
+        "1": "1 — Redaktionell assistans",
+        "2": "2 — Samskrivning",
+        "3": "3 — AI-genererat (granskat av människa)",
+        "label": "AI-textnivå"
+      },
+      "ai-tools": {
+        "label": "AI-verktyg",
+        "placeholder": "t.ex. Claude, ChatGPT, Copilot"
+      },
+      "pinned": {
+        "label": "Utvalt inlägg",
+        "no": "Nej",
+        "yes": "Ja — fäst i sektionen Utvalt"
+      },
+      "sensitive": {
+        "hint": "Markera detta inlägg som känsligt och lägg till valfri varningstext",
+        "label": "Innehållsvarning"
       }
     },
     "new": {
@@ -122,6 +151,38 @@
     "update": {
       "action": "Redigera inlägg",
       "title": "Uppdatera %s inlägg"
+    },
+    "filter": {
+      "type": "Typ",
+      "status": "Status",
+      "all": "Alla",
+      "status_published": "Publicerade",
+      "status_draft": "Utkast",
+      "status_deleted": "Raderade",
+      "status_all": "Alla",
+      "searchPlaceholder": "Sök inlägg…",
+      "searchButton": "Sök",
+      "clear": "Rensa",
+      "newest": "Nyast",
+      "oldest": "Äldst",
+      "results": "inlägg"
+    },
+    "purge": {
+      "action": "Radera permanent",
+      "cancel": "Nej – tillbaka till inlägg",
+      "submit": "Jag är säker – radera permanent",
+      "success": "Inlägg permanent raderat",
+      "title": "Radera detta inlägg permanent?",
+      "warning": "Detta tar bort inlägget från databasen. Denna åtgärd kan inte ångras."
+    },
+    "purgeAll": {
+      "action": "Rensa alla raderade",
+      "cancel": "Nej - tillbaka till inlägg",
+      "none": "Inga raderade inlägg att rensa",
+      "submit": "Jag är säker - radera alla permanent",
+      "success": "%s inlägg permanent raderade",
+      "title": "Radera alla raderade inlägg permanent?",
+      "warning": "Detta tar permanent bort **%s raderade inlägg** från databasen. Denna åtgärd kan inte ångras."
     }
   }
 }

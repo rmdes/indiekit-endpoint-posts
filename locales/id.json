@@ -91,6 +91,35 @@
       "updateDraft": "Perbarui draf",
       "visibility": {
         "label": "Visibilitas"
+      },
+      "ai-code-level": {
+        "0": "0 — Ditulis manusia",
+        "1": "1 — Dibantu AI",
+        "2": "2 — Sebagian besar dihasilkan AI",
+        "label": "Level kode AI"
+      },
+      "ai-description": {
+        "label": "Catatan penggunaan AI"
+      },
+      "ai-text-level": {
+        "0": "0 — Tidak ada",
+        "1": "1 — Bantuan editorial",
+        "2": "2 — Penulisan bersama",
+        "3": "3 — Dihasilkan AI (ditinjau manusia)",
+        "label": "Level teks AI"
+      },
+      "ai-tools": {
+        "label": "Alat AI",
+        "placeholder": "mis. Claude, ChatGPT, Copilot"
+      },
+      "pinned": {
+        "label": "Kiriman unggulan",
+        "no": "Tidak",
+        "yes": "Ya — sematkan di bagian Unggulan"
+      },
+      "sensitive": {
+        "hint": "Tandai kiriman ini sebagai sensitif dan tambahkan teks peringatan opsional",
+        "label": "Peringatan konten"
       }
     },
     "new": {
@@ -122,6 +151,38 @@
     "update": {
       "action": "Sunting pos",
       "title": "Perbarui %s pos"
+    },
+    "filter": {
+      "type": "Jenis",
+      "status": "Status",
+      "all": "Semua",
+      "status_published": "Dipublikasikan",
+      "status_draft": "Draf",
+      "status_deleted": "Dihapus",
+      "status_all": "Semua",
+      "searchPlaceholder": "Cari kiriman…",
+      "searchButton": "Cari",
+      "clear": "Hapus",
+      "newest": "Terbaru",
+      "oldest": "Terlama",
+      "results": "kiriman"
+    },
+    "purge": {
+      "action": "Hapus permanen",
+      "cancel": "Tidak – kembali ke kiriman",
+      "submit": "Saya yakin – hapus permanen",
+      "success": "Kiriman dihapus permanen",
+      "title": "Hapus permanen kiriman ini?",
+      "warning": "Ini akan menghapus kiriman dari basis data. Tindakan ini tidak dapat dibatalkan."
+    },
+    "purgeAll": {
+      "action": "Bersihkan semua yang dihapus",
+      "cancel": "Tidak - kembali ke kiriman",
+      "none": "Tidak ada kiriman terhapus untuk dibersihkan",
+      "submit": "Saya yakin - hapus semua permanen",
+      "success": "%s kiriman dihapus permanen",
+      "title": "Hapus permanen semua kiriman yang dihapus?",
+      "warning": "Ini akan menghapus **%s kiriman yang dihapus** secara permanen dari basis data. Tindakan ini tidak dapat dibatalkan."
     }
   }
 }

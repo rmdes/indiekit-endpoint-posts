@@ -91,6 +91,35 @@
       "updateDraft": "Mettre à jour le brouillon",
       "visibility": {
         "label": "Visibilité"
+      },
+      "ai-code-level": {
+        "0": "0 — Écrit par un humain",
+        "1": "1 — Assisté par IA",
+        "2": "2 — Principalement généré par IA",
+        "label": "Niveau de code IA"
+      },
+      "ai-description": {
+        "label": "Note d'utilisation de l'IA"
+      },
+      "ai-text-level": {
+        "0": "0 — Aucun",
+        "1": "1 — Assistance éditoriale",
+        "2": "2 — Co-rédaction",
+        "3": "3 — Généré par IA (relu par un humain)",
+        "label": "Niveau de texte IA"
+      },
+      "ai-tools": {
+        "label": "Outils IA",
+        "placeholder": "ex. Claude, ChatGPT, Copilot"
+      },
+      "pinned": {
+        "label": "Publication en vedette",
+        "no": "Non",
+        "yes": "Oui — épingler dans la section En vedette"
+      },
+      "sensitive": {
+        "hint": "Marquer cette publication comme sensible et ajouter un texte d'avertissement optionnel",
+        "label": "Avertissement de contenu"
       }
     },
     "new": {
@@ -122,6 +151,38 @@
     "update": {
       "action": "Modifier la publication",
       "title": "Mettre à jour la publication de %s"
+    },
+    "filter": {
+      "type": "Type",
+      "status": "Statut",
+      "all": "Tous",
+      "status_published": "Publiés",
+      "status_draft": "Brouillons",
+      "status_deleted": "Supprimés",
+      "status_all": "Tous",
+      "searchPlaceholder": "Rechercher des publications…",
+      "searchButton": "Rechercher",
+      "clear": "Effacer",
+      "newest": "Plus récent",
+      "oldest": "Plus ancien",
+      "results": "publications"
+    },
+    "purge": {
+      "action": "Supprimer définitivement",
+      "cancel": "Non – retourner aux publications",
+      "submit": "Je suis sûr – supprimer définitivement",
+      "success": "Publication supprimée définitivement",
+      "title": "Supprimer définitivement cette publication ?",
+      "warning": "Cela supprimera la publication de la base de données. Cette action ne peut pas être annulée."
+    },
+    "purgeAll": {
+      "action": "Purger toutes les supprimées",
+      "cancel": "Non - retourner aux publications",
+      "none": "Aucune publication supprimée à purger",
+      "submit": "Je suis sûr - supprimer toutes définitivement",
+      "success": "%s publication(s) supprimée(s) définitivement",
+      "title": "Supprimer définitivement toutes les publications supprimées ?",
+      "warning": "Cela supprimera définitivement **%s publication(s) supprimée(s)** de la base de données. Cette action ne peut pas être annulée."
     }
   }
 }

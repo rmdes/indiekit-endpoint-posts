@@ -91,6 +91,35 @@
       "updateDraft": "Entwurf aktualisieren",
       "visibility": {
         "label": "Sichtbarkeit"
+      },
+      "ai-code-level": {
+        "0": "0 — Von Menschen geschrieben",
+        "1": "1 — KI-unterstützt",
+        "2": "2 — Überwiegend KI-generiert",
+        "label": "KI-Code-Stufe"
+      },
+      "ai-description": {
+        "label": "KI-Nutzungshinweis"
+      },
+      "ai-text-level": {
+        "0": "0 — Keine",
+        "1": "1 — Redaktionelle Unterstützung",
+        "2": "2 — Gemeinsame Erstellung",
+        "3": "3 — KI-generiert (menschlich überprüft)",
+        "label": "KI-Text-Stufe"
+      },
+      "ai-tools": {
+        "label": "KI-Werkzeuge",
+        "placeholder": "z.B. Claude, ChatGPT, Copilot"
+      },
+      "pinned": {
+        "label": "Hervorgehobener Beitrag",
+        "no": "Nein",
+        "yes": "Ja — im Bereich Hervorgehoben anheften"
+      },
+      "sensitive": {
+        "hint": "Diesen Beitrag als sensibel markieren und optionalen Warntext hinzufügen",
+        "label": "Inhaltswarnung"
       }
     },
     "new": {
@@ -122,6 +151,38 @@
     "update": {
       "action": "Beitrag bearbeiten",
       "title": "%s-Beitrag aktualisieren"
+    },
+    "filter": {
+      "type": "Typ",
+      "status": "Status",
+      "all": "Alle",
+      "status_published": "Veröffentlicht",
+      "status_draft": "Entwürfe",
+      "status_deleted": "Gelöscht",
+      "status_all": "Alle",
+      "searchPlaceholder": "Beiträge suchen…",
+      "searchButton": "Suchen",
+      "clear": "Löschen",
+      "newest": "Neueste",
+      "oldest": "Älteste",
+      "results": "Beiträge"
+    },
+    "purge": {
+      "action": "Endgültig löschen",
+      "cancel": "Nein – zurück zu Beiträgen",
+      "submit": "Ich bin sicher – endgültig löschen",
+      "success": "Beitrag endgültig gelöscht",
+      "title": "Diesen Beitrag endgültig löschen?",
+      "warning": "Dies entfernt den Beitrag aus der Datenbank. Diese Aktion kann nicht rückgängig gemacht werden."
+    },
+    "purgeAll": {
+      "action": "Alle gelöschten bereinigen",
+      "cancel": "Nein – zurück zu Beiträgen",
+      "none": "Keine gelöschten Beiträge zum Bereinigen",
+      "submit": "Ich bin sicher – alle endgültig löschen",
+      "success": "%s Beitrag(e) endgültig gelöscht",
+      "title": "Alle gelöschten Beiträge endgültig löschen?",
+      "warning": "Dies entfernt **%s gelöschte(n) Beitrag/Beiträge** dauerhaft aus der Datenbank. Diese Aktion kann nicht rückgängig gemacht werden."
     }
   }
 }

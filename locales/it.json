@@ -91,6 +91,35 @@
       "updateDraft": "Aggiorna bozza",
       "visibility": {
         "label": "Visibilità"
+      },
+      "ai-code-level": {
+        "0": "0 — Scritto da umano",
+        "1": "1 — Assistito dall'IA",
+        "2": "2 — Prevalentemente generato dall'IA",
+        "label": "Livello di codice IA"
+      },
+      "ai-description": {
+        "label": "Nota sull'utilizzo dell'IA"
+      },
+      "ai-text-level": {
+        "0": "0 — Nessuno",
+        "1": "1 — Assistenza editoriale",
+        "2": "2 — Co-stesura",
+        "3": "3 — Generato dall'IA (rivisto da umano)",
+        "label": "Livello di testo IA"
+      },
+      "ai-tools": {
+        "label": "Strumenti IA",
+        "placeholder": "es. Claude, ChatGPT, Copilot"
+      },
+      "pinned": {
+        "label": "Post in evidenza",
+        "no": "No",
+        "yes": "Sì — fissa nella sezione In evidenza"
+      },
+      "sensitive": {
+        "hint": "Contrassegna questo post come sensibile e aggiungi un testo di avvertimento opzionale",
+        "label": "Avviso sui contenuti"
       }
     },
     "new": {
@@ -122,6 +151,38 @@
     "update": {
       "action": "Modifica post",
       "title": "Aggiorna il post %s"
+    },
+    "filter": {
+      "type": "Tipo",
+      "status": "Stato",
+      "all": "Tutti",
+      "status_published": "Pubblicati",
+      "status_draft": "Bozze",
+      "status_deleted": "Eliminati",
+      "status_all": "Tutti",
+      "searchPlaceholder": "Cerca post…",
+      "searchButton": "Cerca",
+      "clear": "Cancella",
+      "newest": "Più recente",
+      "oldest": "Più vecchio",
+      "results": "post"
+    },
+    "purge": {
+      "action": "Elimina definitivamente",
+      "cancel": "No – torna ai post",
+      "submit": "Sono sicuro – elimina definitivamente",
+      "success": "Post eliminato definitivamente",
+      "title": "Eliminare definitivamente questo post?",
+      "warning": "Questo rimuoverà il post dal database. Questa azione non può essere annullata."
+    },
+    "purgeAll": {
+      "action": "Elimina tutti i cancellati",
+      "cancel": "No - torna ai post",
+      "none": "Nessun post eliminato da cancellare",
+      "submit": "Sono sicuro - elimina tutti definitivamente",
+      "success": "%s post eliminati definitivamente",
+      "title": "Eliminare definitivamente tutti i post eliminati?",
+      "warning": "Questo rimuoverà definitivamente **%s post eliminati** dal database. Questa azione non può essere annullata."
     }
   }
 }

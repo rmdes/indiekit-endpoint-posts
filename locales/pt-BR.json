@@ -91,6 +91,35 @@
       "updateDraft": "Atualizar rascunho",
       "visibility": {
         "label": "Visibilidade"
+      },
+      "ai-code-level": {
+        "0": "0 — Escrito por humano",
+        "1": "1 — Assistido por IA",
+        "2": "2 — Gerado principalmente por IA",
+        "label": "Nível de código IA"
+      },
+      "ai-description": {
+        "label": "Nota de uso de IA"
+      },
+      "ai-text-level": {
+        "0": "0 — Nenhum",
+        "1": "1 — Assistência editorial",
+        "2": "2 — Co-redação",
+        "3": "3 — Gerado por IA (revisado por humano)",
+        "label": "Nível de texto IA"
+      },
+      "ai-tools": {
+        "label": "Ferramentas de IA",
+        "placeholder": "ex. Claude, ChatGPT, Copilot"
+      },
+      "pinned": {
+        "label": "Post em destaque",
+        "no": "Não",
+        "yes": "Sim — fixar na seção Destaques"
+      },
+      "sensitive": {
+        "hint": "Marcar este post como sensível e adicionar texto de aviso opcional",
+        "label": "Aviso de conteúdo"
       }
     },
     "new": {
@@ -122,6 +151,38 @@
     "update": {
       "action": "Editar post",
       "title": "Atualizar %s post"
+    },
+    "filter": {
+      "type": "Tipo",
+      "status": "Status",
+      "all": "Todos",
+      "status_published": "Publicados",
+      "status_draft": "Rascunhos",
+      "status_deleted": "Excluídos",
+      "status_all": "Todos",
+      "searchPlaceholder": "Pesquisar posts…",
+      "searchButton": "Pesquisar",
+      "clear": "Limpar",
+      "newest": "Mais recente",
+      "oldest": "Mais antigo",
+      "results": "posts"
+    },
+    "purge": {
+      "action": "Excluir permanentemente",
+      "cancel": "Não – voltar aos posts",
+      "submit": "Tenho certeza – excluir permanentemente",
+      "success": "Post excluído permanentemente",
+      "title": "Excluir permanentemente este post?",
+      "warning": "Isto removerá o post do banco de dados. Esta ação não pode ser desfeita."
+    },
+    "purgeAll": {
+      "action": "Purgar todos os excluídos",
+      "cancel": "Não - voltar aos posts",
+      "none": "Nenhum post excluído para purgar",
+      "submit": "Tenho certeza - excluir todos permanentemente",
+      "success": "%s post(s) excluído(s) permanentemente",
+      "title": "Excluir permanentemente todos os posts excluídos?",
+      "warning": "Isto removerá permanentemente **%s post(s) excluído(s)** do banco de dados. Esta ação não pode ser desfeita."
     }
   }
 }

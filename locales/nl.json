@@ -91,6 +91,35 @@
       "updateDraft": "Concept bijwerken",
       "visibility": {
         "label": "Zichtbaarheid"
+      },
+      "ai-code-level": {
+        "0": "0 — Door mensen geschreven",
+        "1": "1 — AI-ondersteund",
+        "2": "2 — Voornamelijk door AI gegenereerd",
+        "label": "AI-codeniveau"
+      },
+      "ai-description": {
+        "label": "AI-gebruiksnotitie"
+      },
+      "ai-text-level": {
+        "0": "0 — Geen",
+        "1": "1 — Redactionele ondersteuning",
+        "2": "2 — Co-schrijven",
+        "3": "3 — Door AI gegenereerd (menselijk beoordeeld)",
+        "label": "AI-tekstniveau"
+      },
+      "ai-tools": {
+        "label": "AI-hulpmiddelen",
+        "placeholder": "bijv. Claude, ChatGPT, Copilot"
+      },
+      "pinned": {
+        "label": "Uitgelicht bericht",
+        "no": "Nee",
+        "yes": "Ja — vastpinnen in sectie Uitgelicht"
+      },
+      "sensitive": {
+        "hint": "Markeer dit bericht als gevoelig en voeg optionele waarschuwingstekst toe",
+        "label": "Inhoudswaarschuwing"
       }
     },
     "new": {
@@ -122,6 +151,38 @@
     "update": {
       "action": "Post bewerken",
       "title": "Post %s bijwerken"
+    },
+    "filter": {
+      "type": "Type",
+      "status": "Status",
+      "all": "Alle",
+      "status_published": "Gepubliceerd",
+      "status_draft": "Concepten",
+      "status_deleted": "Verwijderd",
+      "status_all": "Alle",
+      "searchPlaceholder": "Berichten zoeken…",
+      "searchButton": "Zoeken",
+      "clear": "Wissen",
+      "newest": "Nieuwste",
+      "oldest": "Oudste",
+      "results": "berichten"
+    },
+    "purge": {
+      "action": "Definitief verwijderen",
+      "cancel": "Nee – terug naar berichten",
+      "submit": "Ik weet het zeker – definitief verwijderen",
+      "success": "Bericht definitief verwijderd",
+      "title": "Dit bericht definitief verwijderen?",
+      "warning": "Dit verwijdert het bericht uit de database. Deze actie kan niet ongedaan worden gemaakt."
+    },
+    "purgeAll": {
+      "action": "Alle verwijderde opruimen",
+      "cancel": "Nee - terug naar berichten",
+      "none": "Geen verwijderde berichten om op te ruimen",
+      "submit": "Ik weet het zeker - allemaal definitief verwijderen",
+      "success": "%s bericht(en) definitief verwijderd",
+      "title": "Alle verwijderde berichten definitief verwijderen?",
+      "warning": "Dit verwijdert **%s verwijderde bericht(en)** permanent uit de database. Deze actie kan niet ongedaan worden gemaakt."
     }
   }
 }

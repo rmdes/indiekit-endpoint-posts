@@ -91,6 +91,35 @@
       "updateDraft": "更新草稿",
       "visibility": {
         "label": "可见度"
+      },
+      "ai-code-level": {
+        "0": "0 — 人工编写",
+        "1": "1 — AI 辅助",
+        "2": "2 — 主要由 AI 生成",
+        "label": "AI 代码级别"
+      },
+      "ai-description": {
+        "label": "AI 使用说明"
+      },
+      "ai-text-level": {
+        "0": "0 — 无",
+        "1": "1 — 编辑辅助",
+        "2": "2 — 协作撰写",
+        "3": "3 — AI 生成（人工审核）",
+        "label": "AI 文本级别"
+      },
+      "ai-tools": {
+        "label": "AI 工具",
+        "placeholder": "例如 Claude、ChatGPT、Copilot"
+      },
+      "pinned": {
+        "label": "精选帖子",
+        "no": "否",
+        "yes": "是 — 固定到精选区"
+      },
+      "sensitive": {
+        "hint": "将此帖子标记为敏感内容并添加可选的警告文字",
+        "label": "内容警告"
       }
     },
     "new": {
@@ -122,6 +151,38 @@
     "update": {
       "action": "编辑帖子",
       "title": "更新 %s 帖子"
+    },
+    "filter": {
+      "type": "类型",
+      "status": "状态",
+      "all": "全部",
+      "status_published": "已发布",
+      "status_draft": "草稿",
+      "status_deleted": "已删除",
+      "status_all": "全部",
+      "searchPlaceholder": "搜索帖子…",
+      "searchButton": "搜索",
+      "clear": "清除",
+      "newest": "最新",
+      "oldest": "最旧",
+      "results": "帖子"
+    },
+    "purge": {
+      "action": "永久删除",
+      "cancel": "否 – 返回帖子",
+      "submit": "我确定 – 永久删除",
+      "success": "帖子已永久删除",
+      "title": "永久删除此帖子？",
+      "warning": "这将从数据库中移除该帖子。此操作无法撤销。"
+    },
+    "purgeAll": {
+      "action": "清除所有已删除",
+      "cancel": "否 - 返回帖子",
+      "none": "没有已删除的帖子需要清除",
+      "submit": "我确定 - 永久删除全部",
+      "success": "已永久删除 %s 篇帖子",
+      "title": "永久删除所有已删除的帖子？",
+      "warning": "这将从数据库中永久移除 **%s 篇已删除的帖子**。此操作无法撤销。"
     }
   }
 }
