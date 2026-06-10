@@ -3,7 +3,7 @@
 ## Package Overview
 
 **Package:** `@rmdes/indiekit-endpoint-posts`
-**Version:** 1.0.0-beta.28
+**Version:** see package.json
 **Type:** Indiekit endpoint plugin (fork of `@indiekit/endpoint-posts`)
 **Purpose:** Post management admin interface for viewing, creating, editing, and deleting posts published by Micropub
 
@@ -11,7 +11,7 @@ This is a **fork** of the upstream `@indiekit/endpoint-posts` package with criti
 
 ## Upstream Differences
 
-This fork contains **three custom fixes** not present in upstream Indiekit:
+This fork contains **four custom fixes** not present in upstream Indiekit:
 
 ### 1. Syndicate Form Bug Fix (CRITICAL)
 
@@ -70,6 +70,38 @@ const results = await postsCollection.aggregate([
   },
   { $limit: 1 }
 ]).toArray();
+```
+
+### 4. Syndicator Error Hardening (June 2026)
+
+**File:** `lib/utils.js` - `getSyndicateToItems()`
+**Problem:** The syndicate target list was reading each syndicator's `info` getter directly without error handling. A misconfigured syndicator (e.g., Mastodon with an empty instance URL doing `new URL("")`) throws `TypeError: Invalid URL`, which propagates out of the create/edit form middleware and returns a 500 on `/posts/create` and `/posts/:uid/update` for every post type.
+**Effect:** Single misconfigured syndicator breaks the entire posts editor for all users.
+**Fix:** Wrap each syndicator's `info` getter in a try-catch. On failure, render the target as a disabled item with a hint instead of crashing. No unconfigured plugin should crash core features.
+**Commit:** 41eb8f4
+
+```javascript
+// Before: Direct info access (crashes on misconfigured syndicator)
+const items = syndication.map((target) => {
+  const info = target.info;  // Throws if target is broken
+  return { name: info.name, ... }
+})
+
+// After: Safe error handling
+const items = syndication.map((target) => {
+  let info;
+  try {
+    info = target.info;
+  } catch (error) {
+    // Render as disabled with hint
+    return {
+      name: target.uid,
+      disabled: true,
+      hint: "Syndicator is misconfigured"
+    }
+  }
+  return { name: info.name, ... }
+})
 ```
 
 ## Architecture
