@@ -113,6 +113,13 @@
       "layout": {
         "label": "Layout"
       },
+      "layout-intent": {
+        "label": "Layout width",
+        "hint": "Controls how wide this post renders. Leave unset to use your site’s configured default.",
+        "default": "Site default",
+        "fullwidth": "Full width",
+        "minimal": "Minimal (narrow reading column)"
+      },
       "mp-slug": {
         "label": "URL slug"
       },
