@@ -98,22 +98,17 @@
       optional: true
     }) | indent(4) }}
 
-    {% if layoutItems and layoutItems.length %}
-    {% set layoutSelectItems = [] %}
-    {% for item in layoutItems %}
-      {% set _ = layoutSelectItems.push({
-        text: item.text,
-        value: item.value,
-        selected: item.value === properties.layout
-      }) %}
-    {% endfor %}
     {{ select({
-      name: "layout",
-      label: __("posts.form.layout.label"),
+      name: "layout-intent",
+      label: __("posts.form.layout-intent.label"),
+      hint: __("posts.form.layout-intent.hint"),
       optional: true,
-      items: layoutSelectItems
+      items: [
+        { text: __("posts.form.layout-intent.default"), value: "", selected: not properties["layout-intent"] },
+        { text: __("posts.form.layout-intent.fullwidth"), value: "fullwidth", selected: properties["layout-intent"] === "fullwidth" },
+        { text: __("posts.form.layout-intent.minimal"), value: "minimal", selected: properties["layout-intent"] === "minimal" }
+      ]
     }) | indent(4) }}
-    {% endif %}
 
     {{ select({
       name: "pinned",
