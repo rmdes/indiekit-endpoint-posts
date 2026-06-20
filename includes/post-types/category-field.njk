@@ -4,6 +4,7 @@
   label: __("posts.form.category.label"),
   hint: __("posts.form.category.hint"),
   optional: not field.required,
+  attributes: { "data-suggestions": application.micropubEndpoint + "?q=category" } if application.micropubEndpoint else {},
   localisation: {
     tag: __("posts.form.category.tag"),
     tags: __("posts.form.category.label") | lower
