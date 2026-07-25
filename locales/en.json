@@ -115,7 +115,7 @@
       },
       "layout-intent": {
         "label": "Layout width",
-        "hint": "Controls how wide this post renders. Leave unset to use your site’s configured default.",
+        "hint": "Controls how wide this post renders. Leave unset to use your site’s standard layout.",
         "default": "Site default",
         "fullwidth": "Full width",
         "minimal": "Minimal (narrow reading column)"
