@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.29](https://github.com/getindiekit/indiekit/compare/v1.0.0-beta.28...v1.0.0-beta.29) (2026-08-16)
+
+### Bug Fixes
+
+* **endpoint-posts:** use correct template variable for syndicate form source_url ([afea6f0](https://github.com/getindiekit/indiekit/commit/afea6f05d05aa64f30682df1d69a449f246a90be))
+
+
+# [1.0.0-beta.28](https://github.com/getindiekit/indiekit/compare/v1.0.0-beta.27...v1.0.0-beta.28) (2026-07-04)
+
+**Note:** Version bump only for package @indiekit/endpoint-posts
+
+
+
+
+
+# [1.0.0-beta.27](https://github.com/getindiekit/indiekit/compare/v1.0.0-beta.26...v1.0.0-beta.27) (2026-03-07)
+
+**Note:** Version bump only for package @indiekit/endpoint-posts
+
+
+
+
+
 # [1.0.0-beta.25](https://github.com/getindiekit/indiekit/compare/v1.0.0-beta.24...v1.0.0-beta.25) (2025-12-24)
 
 
