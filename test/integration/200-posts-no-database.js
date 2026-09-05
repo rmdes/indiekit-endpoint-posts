@@ -17,7 +17,7 @@ describe("endpoint-posts GET /posts", () => {
 
     assert.equal(
       result.querySelector("title").textContent,
-      "Published posts - Test configuration",
+      "Posts - Test configuration",
     );
     assert.match(
       result.querySelector(".main__container p").textContent,

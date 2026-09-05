@@ -4,7 +4,6 @@ import { describe, it } from "node:test";
 import { mockResponse } from "mock-req-res";
 
 import {
-  getChannelItems,
   getGeoProperty,
   getGeoValue,
   getLocationProperty,
@@ -54,16 +53,6 @@ const publication = {
 };
 
 describe("endpoint-posts/lib/utils", () => {
-  it("Gets channel `items` for checkboxes component", () => {
-    const result = getChannelItems(publication);
-
-    assert.equal(result.length, 2);
-    assert.equal(result[0].label, "Posts");
-    assert.equal(result[0].value, "posts");
-    assert.equal(result[1].label, "Pages");
-    assert.equal(result[1].value, "pages");
-  });
-
   it("Gets geographic coordinates property", () => {
     assert.deepEqual(getGeoProperty("50.8252, -0.1383"), {
       type: "geo",

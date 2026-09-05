@@ -6,12 +6,12 @@ import express from "express";
 
 import { deleteController } from "./lib/controllers/delete.js";
 import { editController } from "./lib/controllers/edit.js";
-import { purgeAllController } from "./lib/controllers/purge-all.js";
-import { purgeController } from "./lib/controllers/purge.js";
 import { formController } from "./lib/controllers/form.js";
 import { newController } from "./lib/controllers/new.js";
 import { postController } from "./lib/controllers/post.js";
 import { postsController } from "./lib/controllers/posts.js";
+import { purgeAllController } from "./lib/controllers/purge-all.js";
+import { purgeController } from "./lib/controllers/purge.js";
 import { postData } from "./lib/middleware/post-data.js";
 import { validate } from "./lib/middleware/validation.js";
 
