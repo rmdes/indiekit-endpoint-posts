@@ -68,6 +68,9 @@
       "layout": {
         "label": "Layout"
       },
+      "mp-channel": {
+        "label": "Saluran"
+      },
       "mp-slug": {
         "label": "URL siput"
       },

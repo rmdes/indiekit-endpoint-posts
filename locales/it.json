@@ -68,6 +68,9 @@
       "layout": {
         "label": "Layout"
       },
+      "mp-channel": {
+        "label": "Canale"
+      },
       "mp-slug": {
         "label": "Slug dell'URL"
       },

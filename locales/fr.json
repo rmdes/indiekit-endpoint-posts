@@ -68,6 +68,9 @@
       "layout": {
         "label": "Layout"
       },
+      "mp-channel": {
+        "label": "Canal"
+      },
       "mp-slug": {
         "label": "Identifiant unique d’URL (slug)"
       },
