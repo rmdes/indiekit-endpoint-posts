@@ -28,10 +28,13 @@ const request = supertest.agent(server);
 
 describe("endpoint-posts GET /posts", () => {
   before(async () => {
-    await request.post("/micropub").auth(testToken(), { type: "bearer" }).send({
-      type: ["h-entry"],
-      properties: { name: ["Foobar"] },
-    });
+    await request
+      .post("/micropub")
+      .auth(testToken(), { type: "bearer" })
+      .send({
+        type: ["h-entry"],
+        properties: { name: ["Foobar"] },
+      });
   });
 
   it("Returns list of published posts", async () => {
